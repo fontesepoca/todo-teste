@@ -1,4 +1,3 @@
-import ErrorType from "fakestore/@types/error";
 import { ProductsType } from "fakestore/@types/products";
 
 export default async function getProducts(): Promise<

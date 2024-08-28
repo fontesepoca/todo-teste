@@ -1,5 +1,5 @@
 import CardProps from "fakestore/@types/components/card";
-import cardStyle from "fakestore/styles/components/card.module.css";
+import cardStyle from "fakestore/styles/components/products/card.module.css";
 import Link from "next/link";
 
 export default function Card({ image, key, price, title }: CardProps) {
