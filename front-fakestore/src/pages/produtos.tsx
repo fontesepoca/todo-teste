@@ -1,3 +1,9 @@
+import Layout from "fakestore/components/layout";
+
 export default function Product() {
-  return <p>Product</p>;
+  return (
+    <Layout>
+      <p>Product</p>
+    </Layout>
+  );
 }
