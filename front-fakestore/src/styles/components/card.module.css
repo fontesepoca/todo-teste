@@ -1,0 +1,67 @@
+.product_card {
+  width: 20rem;
+  height: 30rem;
+  margin: 2rem;
+}
+.product_card a {
+  border: 1px solid var(--primary-color);
+  width: 20rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 1rem;
+  background-color: var(--primary-color-50);
+  text-decoration: none;
+  transition: 500ms;
+}
+
+.product_card:hover a {
+  background-color: var(--primary-color);
+}
+
+.product_card:hover a header {
+  color: var(--secondary-color);
+}
+
+.product_card:hover a section {
+  color: var(--secondary-color);
+}
+
+.product_card header {
+  color: var(--primary-color);
+  text-align: center;
+  display: -webkit-box;
+  min-height: 5rem;
+}
+
+.product_card header h2 {
+  font-size: 1.2rem;
+  width: 18rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product_card figure {
+  border: 1px solid var(--primary-color-100);
+  width: 16rem;
+  height: 18rem;
+  border-radius: 10px;
+}
+
+.product_card figure img {
+  width: 16rem;
+  height: 18rem;
+  border-radius: 10px;
+}
+
+.product_card section {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin: 0;
+}

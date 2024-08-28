@@ -1,0 +1,8 @@
+.fakestore_default_product {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  color: var(--primary-color);
+}

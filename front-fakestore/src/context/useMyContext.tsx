@@ -9,3 +9,5 @@ const useMyContext = (): MyContextType => {
   }
   return context;
 };
+
+export default useMyContext;
