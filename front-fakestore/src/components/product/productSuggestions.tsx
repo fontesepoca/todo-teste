@@ -1,7 +1,6 @@
 import useMyContext from "fakestore/context/useMyContext";
 import suggestionsStyles from "fakestore/styles/components/product/product-suggestions.module.css";
 import { useMemo } from "react";
-import DefaultProduct from "../defaultProduct";
 import { filterByCategorie } from "fakestore/services/products";
 import Card from "../products/card";
 

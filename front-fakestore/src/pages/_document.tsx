@@ -1,6 +1,3 @@
-/* eslint-disable @next/next/no-title-in-document-head */
-// eslint-disable-next-line @next/next/no-title-in-document-head
-
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo } from "react";
 import { useRouter } from "next/router";
 import Layout from "fakestore/components/layout";
 import useMyContext from "fakestore/context/useMyContext";

@@ -7,4 +7,4 @@ export interface filtersProps {
   setOrder: (valueOrder: OrderTypes | undefined) => void;
 }
 
-export type OrderTypes = 'name asc' | 'name desc' | 'price asc' | 'price desc';
+export type OrderTypes = "name asc" | "name desc" | "price asc" | "price desc";
