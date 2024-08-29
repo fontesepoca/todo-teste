@@ -1,13 +1,15 @@
-import { ProductsType } from "fakestore/@types/products";
+import { ProductsType, ProductType } from "fakestore/@types/products";
 
-export default async function getProducts(): Promise<
-  ProductsType | undefined
-> {
+export default async function getProducts(
+  id?: number
+): Promise<ProductsType | ProductType | undefined> {
   try {
-    const response = await fetch("https://fakestoreapi.com/products?limit=100");
-    const data: ProductsType = await response.json();
+    const response = await fetch(
+      `https://fakestoreapi.com/products${id ? "/" + id : "?limit=100"}`
+    );
+    const data: ProductsType | ProductType = await response.json();
     return data;
   } catch (error) {
-    throw new Error('Something went wrong!');
+    throw new Error("Something went wrong!");
   }
 }

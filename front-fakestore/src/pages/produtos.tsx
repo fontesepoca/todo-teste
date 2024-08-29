@@ -14,9 +14,10 @@ import {
 } from "fakestore/services/products";
 import { OrderTypes } from "fakestore/@types/components/filters";
 import productsStyle from 'fakestore/styles/pages/products.module.css';
+import { ProductsType } from "fakestore/@types/products";
 
 export default function Product() {
-  const { setProducts, products, setCategories } = useMyContext();
+  const { setProducts, products, setCategories, categories } = useMyContext();
   const [productName, setProductName] = useState<string>("");
   const [productCategorie, setProductCategorie] = useState<string>();
   const [productOrder, setProductOrder] = useState<OrderTypes>();
@@ -24,7 +25,7 @@ export default function Product() {
   useEffect(() => {
     const fetchProducts = async () => {
       const data = await getProducts();
-      setProducts(data);
+      setProducts(data as ProductsType);
     };
 
     const fetchCategories = async () => {
@@ -49,7 +50,7 @@ export default function Product() {
   }, [products, productName, productCategorie, productOrder]);
 
   const renderCards = useMemo(() => {
-    if (productsFiltered) {
+    if (productsFiltered && categories) {
       return (
         <>
           <Filters
