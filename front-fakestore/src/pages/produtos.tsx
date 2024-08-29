@@ -13,7 +13,7 @@ import {
   filterByOrder,
 } from "fakestore/services/products";
 import { OrderTypes } from "fakestore/@types/components/filters";
-import productsStyle from 'fakestore/styles/pages/products.module.css';
+import productsStyle from "fakestore/styles/pages/products.module.css";
 import { ProductsType } from "fakestore/@types/products";
 
 export default function Product() {

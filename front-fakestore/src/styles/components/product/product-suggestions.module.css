@@ -1,0 +1,7 @@
+.fakestore_product_suggestions {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
