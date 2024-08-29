@@ -18,3 +18,11 @@ body {
   margin: 0;
   background-color: #F6F6F8;
 }
+
+body select {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+body input {
+  font-family: 'Montserrat', sans-serif !important;
+}

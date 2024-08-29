@@ -1,3 +1,32 @@
 .fakestore_filters {
-  background-color: red;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.fakestore_filters label {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.fakestore_filters label svg {
+  width: 1.4rem;
+  height: 1.2rem;
+  fill: var(--primary-color);
+}
+
+.fakestore_filters label input {
+  border: 1px solid var(--primary-color);
+  padding: 5px 1rem 5px 1rem;
+  border-radius: 10px;
+}
+
+.fakestore_filters select {
+  padding: 4px 1rem 4px 1rem;
+  border: 1px solid var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: 10px;
 }
