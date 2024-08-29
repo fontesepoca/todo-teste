@@ -1,5 +1,6 @@
 import CardProps from "fakestore/@types/components/card";
 import cardStyle from "fakestore/styles/components/products/card.module.css";
+import formatePrice from "fakestore/utils/formatePrice";
 import Link from "next/link";
 
 export default function Card({ image, key, price, title, id }: CardProps) {
@@ -13,7 +14,7 @@ export default function Card({ image, key, price, title, id }: CardProps) {
           <img src={image} alt={title} />
         </figure>
         <section>
-          <p>{`$${price}`}</p>
+          <p>{formatePrice(price)}</p>
         </section>
       </Link>
     </article>
