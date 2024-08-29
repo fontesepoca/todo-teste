@@ -7,6 +7,7 @@ import { ProductsType, ProductType } from "fakestore/@types/products";
 import Loading from "fakestore/components/loading";
 import ProductSummary from "fakestore/components/product/productSummary";
 import ProductSuggestions from "fakestore/components/product/productSuggestions";
+import Head from "next/head";
 
 const Produto = () => {
   const { setProductSelected, productSelected, products, setProducts } =
@@ -46,7 +47,16 @@ const Produto = () => {
     return <Loading />;
   }, [productSelected, products]);
 
-  return <Layout>{renderResumeProduct}</Layout>;
+  return (
+    <Layout>
+      <Head>
+        <title>{`FakeStore - ${
+          productSelected ? productSelected.title : ""
+        }`}</title>
+      </Head>
+      {renderResumeProduct}
+    </Layout>
+  );
 };
 
 export default Produto;

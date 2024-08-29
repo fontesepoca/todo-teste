@@ -15,6 +15,7 @@ import {
 import { OrderTypes } from "fakestore/@types/components/filters";
 import productsStyle from "fakestore/styles/pages/products.module.css";
 import { ProductsType } from "fakestore/@types/products";
+import Head from "next/head";
 
 export default function Product() {
   const { setProducts, products, setCategories, categories } = useMyContext();
@@ -84,5 +85,12 @@ export default function Product() {
     return <Loading />;
   }, [productsFiltered, productName, productCategorie, productOrder]);
 
-  return <Layout>{renderCards}</Layout>;
+  return (
+    <Layout>
+      <Head>
+        <title>FakeStore - Produtos</title>
+      </Head>
+      {renderCards}
+    </Layout>
+  );
 }

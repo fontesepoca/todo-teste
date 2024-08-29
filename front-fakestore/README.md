@@ -100,6 +100,30 @@ Ele estará rodando na porta **3000**
 
 </details>
 <details>
+  <summary><strong>🐳 Rodando no Docker 🐳</strong></summary>
+
+Caso queira executar o projeto via `Docker compose`, substituindo o local, execute o comando:
+
+```bash
+docker compose up -d development 
+```
+
+**links para a instalação do docker e docker compose**
+
+Docker:
+
+```bash
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-pt
+```
+
+Docker Compose:
+
+```bash
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-22-04
+```
+
+</details>
+<details>
   <summary><strong>🎛 Padrão de código / Lint 🎛</strong></summary>
 
 1.`nome de variáveis e funções`: _(**inglês** sempre mantendo a **assertividade**)_.

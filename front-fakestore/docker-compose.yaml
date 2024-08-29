@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  development:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: fakestore_development
+    working_dir: /app
+    volumes:
+      - ./:/app/
+    container_name: fakestore_development
+    ports:
+      - 3000:3000
+    tty: true
+    stdin_open: true
+    restart: always
+    networks:
+      - fakestore_net
+networks:
+  fakestore_net: {}
