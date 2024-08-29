@@ -59,14 +59,15 @@ Entre os critérios de avaliação estão:
     Documentação do projeto (readme);
     Performance;
     Uso dos React Hooks;
+    Métodos de tratativa dos dados;
 
 Diferenciais:
 
 ```bash
  React Context;
  Next Router;
- Axios;
 ```
 ## Entrega do Desafio
 
-A entrega do desafio deverá der feita por meio de pull request neste repositório. Efetue o fork do projeto e após concluído, submita um Pull request para avaliação.
+A entrega do desafio deverá der feita por meio de pull request neste repositório. Efetue o fork do projeto e após concluído, submita um Pull request na branch *avaliacao*.
+É de suma importância que a sua branch contenha seu nome e sobrenome.

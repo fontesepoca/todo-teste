@@ -1,0 +1,29 @@
+.fakestore_product_resume {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.fakestore_product_resume figure img {
+  width: 28rem;
+  border-radius: 10%;
+}
+
+.fakestore_product_resume h2 {
+  color: var(--primary-color);
+}
+
+.fakestore_product_resume div {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 770px) {
+  .fakestore_product_resume figure img {
+    width: 18rem;
+  }
+
+  .fakestore_product_resume {
+    flex-direction: column;
+    text-align: center;
+  }
+}
